@@ -21,12 +21,12 @@ public class FakeBookRepository : IBookRepository
 
     public Task SaveChangesAsync() => Task.CompletedTask;
 
-    public Task<bool> ExistsAsync(string titre, string auteur)
+    public Task<bool> ExistsAsync(Book book)
     {
         return Task.FromResult(
             Books.Any(b =>
-                b.Titre.ToLower() == titre.ToLower() &&
-                b.Auteur.ToLower() == auteur.ToLower()
+                b.Titre.ToLower() == book.Titre.ToLower() &&
+                b.Auteur.ToLower() == book.Auteur.ToLower()
             )
         );
     }

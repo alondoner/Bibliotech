@@ -29,6 +29,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "bibliotech-spa", "bibliotec
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "62522"
+		SlnRelativePath = "bibliotech-spa\"
 	EndProjectSection
 EndProject
 Global

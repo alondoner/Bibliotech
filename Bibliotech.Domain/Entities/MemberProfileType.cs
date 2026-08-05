@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bibliotech.Domain.Entities
+﻿namespace Bibliotech.Domain.Entities
 {
-    internal class MemberProfileType
+    public enum MemberProfileType
     {
+        Standard = 1,
+        Etudiant = 2
     }
 }

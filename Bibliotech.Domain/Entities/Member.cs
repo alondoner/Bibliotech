@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bibliotech.Domain.Entities
+﻿namespace Bibliotech.Domain.Entities
 {
-    internal class Member
+    public class Member
     {
+        public int Id { get; set; }
+        public string Nom { get; set; } = string.Empty;
+        public string Prenom { get; set; } = string.Empty;
+
+        public MemberProfileType Profil { get; set; }
+
+        public int MaxEmpruntsSimultanes { get; set; }
+        public int DureePretJours { get; set; }
     }
 }

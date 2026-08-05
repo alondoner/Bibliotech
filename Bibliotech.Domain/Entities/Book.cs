@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bibliotech.Domain.Entities
+﻿namespace Bibliotech.Domain.Entities
 {
-    internal class Book
+    public class Book
     {
+        public int Id { get; set; }
+        public string Titre { get; set; } = string.Empty;
+        public string Auteur { get; set; } = string.Empty;
+
+        public int NombreExemplairesTotal { get; set; }
+        public int NombreExemplairesDisponibles { get; set; }
+
+        public byte[] RowVersion { get; set; } = Array.Empty<byte>();
     }
 }
+

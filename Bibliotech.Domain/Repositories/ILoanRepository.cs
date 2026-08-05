@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bibliotech.Domain.Entities;
 
 namespace Bibliotech.Domain.Repositories
 {
-    internal class ILoanRepository
+    public interface ILoanRepository
     {
+        Task<Loan?> GetByIdAsync(int id);
+        Task<IEnumerable<Loan>> GetLoansByMemberAsync(int memberId);
+        Task AddAsync(Loan loan);
+        Task SaveChangesAsync();
     }
 }

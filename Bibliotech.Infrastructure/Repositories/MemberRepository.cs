@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bibliotech.Domain.Entities;
 
-namespace Bibliotech.Infrastructure.Repositories
+namespace Bibliotech.Domain.Repositories
 {
-    internal class MemberRepository
+    public interface IMemberRepository
     {
+        Task<Member?> GetByIdAsync(int id);
+        Task<IEnumerable<Member>> GetAllAsync();
+        Task AddAsync(Member member);
+        Task SaveChangesAsync();
     }
 }

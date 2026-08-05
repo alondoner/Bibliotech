@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bibliotech.Api", "Bibliotec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotech.Domain", "Bibliotech.Domain\Bibliotech.Domain.csproj", "{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotech.Infrastructure", "Bibliotech.Infrastructure\Bibliotech.Infrastructure.csproj", "{88E96B5A-CD05-4FD5-9412-D03CEDA94419}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E96B5A-CD05-4FD5-9412-D03CEDA94419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E96B5A-CD05-4FD5-9412-D03CEDA94419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E96B5A-CD05-4FD5-9412-D03CEDA94419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E96B5A-CD05-4FD5-9412-D03CEDA94419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

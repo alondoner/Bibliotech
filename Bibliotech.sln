@@ -5,11 +5,31 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bibliotech.Api", "Bibliotech.Api\Bibliotech.Api.csproj", "{5F256E51-5B35-4745-AF78-963E98544200}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotech.Domain", "Bibliotech.Domain\Bibliotech.Domain.csproj", "{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bibliotech.Domain", "Bibliotech.Domain\Bibliotech.Domain.csproj", "{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotech.Infrastructure", "Bibliotech.Infrastructure\Bibliotech.Infrastructure.csproj", "{88E96B5A-CD05-4FD5-9412-D03CEDA94419}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bibliotech.Infrastructure", "Bibliotech.Infrastructure\Bibliotech.Infrastructure.csproj", "{88E96B5A-CD05-4FD5-9412-D03CEDA94419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotech.Tests", "Bibliotech.Tests\Bibliotech.Tests.csproj", "{ED11A2C6-5F45-480F-90B3-5764D141A995}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bibliotech.Tests", "Bibliotech.Tests\Bibliotech.Tests.csproj", "{ED11A2C6-5F45-480F-90B3-5764D141A995}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "bibliotech-spa", "bibliotech-spa\", "{253A8DF6-DC4D-49E2-92D1-8EA04F614017}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62522"
+		Debug.AspNetCompiler.PhysicalPath = "bibliotech-spa\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62522\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62522"
+		Release.AspNetCompiler.PhysicalPath = "bibliotech-spa\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62522\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62522"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +53,10 @@ Global
 		{ED11A2C6-5F45-480F-90B3-5764D141A995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED11A2C6-5F45-480F-90B3-5764D141A995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED11A2C6-5F45-480F-90B3-5764D141A995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{253A8DF6-DC4D-49E2-92D1-8EA04F614017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253A8DF6-DC4D-49E2-92D1-8EA04F614017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253A8DF6-DC4D-49E2-92D1-8EA04F614017}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{253A8DF6-DC4D-49E2-92D1-8EA04F614017}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

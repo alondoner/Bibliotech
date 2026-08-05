@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5193/api/loans";
+const API_URL = "http://localhost:5013/api/loans";
 
 export const loanApi = {
   borrow: async (memberId: number, bookId: number) => {

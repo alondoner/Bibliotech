@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5193/api/members";
+const API_URL = "http://localhost:5013/api/members";
 
 export const memberApi = {
   getById: async (id: number) => {

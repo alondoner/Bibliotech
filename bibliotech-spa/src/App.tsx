@@ -11,7 +11,7 @@ export default function App() {
                 <Link to="/">Enregistrer un livre</Link> |{" "}
                 <Link to="/borrow">Emprunter un livre</Link> |{" "}
                 <Link to="/return">Retourner un livre</Link> |{" "}
-                <Link to="/penalties">Pénalités par adhérent</Link>
+                <Link to="/penalties">P&eacute;nalit&eacute;s par adh&eacute;rent</Link>
             </nav>
 
             <Routes>

@@ -17,6 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bibliotech.Domain\Bibliotech.Domain.csproj" />
+    <ProjectReference Include="..\Bibliotech.Infrastructure\Bibliotech.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 

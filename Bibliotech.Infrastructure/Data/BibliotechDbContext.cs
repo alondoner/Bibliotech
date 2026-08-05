@@ -1,12 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bibliotech.Infrastructure.Data
+﻿namespace Bibliotech.Infrastructure.Data
 {
-    internal class BibliotechDbContext
+    using Microsoft.EntityFrameworkCore;
+    using Bibliotech.Domain.Entities;
+
+    public class BibliotechDbContext : DbContext
     {
+        public DbSet<Book> Books => Set<Book>();
+        public DbSet<Member> Members => Set<Member>();
+        public DbSet<Loan> Loans => Set<Loan>();
+
+        public BibliotechDbContext(DbContextOptions<BibliotechDbContext> options)
+            : base(options)
+        {
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Book>()
+                .Property(b => b.RowVersion)
+                .IsRowVersion();
+        }
     }
 }

@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bibliotech.Domain.Entities;
+using Bibliotech.Domain.Repositories;
 
-namespace Bibliotech.Tests.TestHelpers
+public class FakeMemberRepository : IMemberRepository
 {
-    internal class FakeMemberRepository
+    public List<Member> Members = new();
+
+    public Task AddAsync(Member member)
     {
+        Members.Add(member);
+        return Task.CompletedTask;
     }
+
+    public Task<IEnumerable<Member>> GetAllAsync() =>
+        Task.FromResult(Members.AsEnumerable());
+
+    public Task<Member?> GetByIdAsync(int id) =>
+        Task.FromResult(Members.FirstOrDefault(m => m.Id == id));
+
+    public Task SaveChangesAsync() => Task.CompletedTask;
 }

@@ -1,12 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bibliotech.Domain.Entities;
+using Bibliotech.Domain.Services;
+using Xunit;
 
-namespace Bibliotech.Tests
+public class MemberServiceTests
 {
-    internal class MemberServiceTests
+    [Fact]
+    public void StudentProfile_HasHigherLimits()
     {
+        var student = new Member
+        {
+            Profil = MemberProfileType.Etudiant,
+            MaxEmpruntsSimultanes = 5,
+            DureePretJours = 28
+        };
+
+        var standard = new Member
+        {
+            Profil = MemberProfileType.Standard,
+            MaxEmpruntsSimultanes = 3,
+            DureePretJours = 21
+        };
+
+        Assert.True(student.MaxEmpruntsSimultanes > standard.MaxEmpruntsSimultanes);
+        Assert.True(student.DureePretJours > standard.DureePretJours);
     }
 }

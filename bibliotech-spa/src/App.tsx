@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import AddBookPage from "./pages/AddBookPage";
+import BorrowBookPage from "./pages/BorrowBookPage";
+import ReturnBookPage from "./pages/ReturnBookPage";
+import MemberPenaltiesPage from "./pages/MemberPenaltiesPage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <BrowserRouter>
+            <nav>
+                <Link to="/">Enregistrer un livre</Link> |{" "}
+                <Link to="/borrow">Emprunter un livre</Link> |{" "}
+                <Link to="/return">Retourner un livre</Link> |{" "}
+                <Link to="/penalties">Pénalités par adhérent</Link>
+            </nav>
+
+            <Routes>
+                <Route path="/" element={<AddBookPage />} />
+                <Route path="/borrow" element={<BorrowBookPage />} />
+                <Route path="/return" element={<ReturnBookPage />} />
+                <Route path="/penalties" element={<MemberPenaltiesPage />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
-
-export default App;

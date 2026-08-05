@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotech.Domain", "Biblio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotech.Infrastructure", "Bibliotech.Infrastructure\Bibliotech.Infrastructure.csproj", "{88E96B5A-CD05-4FD5-9412-D03CEDA94419}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotech.Tests", "Bibliotech.Tests\Bibliotech.Tests.csproj", "{ED11A2C6-5F45-480F-90B3-5764D141A995}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{88E96B5A-CD05-4FD5-9412-D03CEDA94419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88E96B5A-CD05-4FD5-9412-D03CEDA94419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88E96B5A-CD05-4FD5-9412-D03CEDA94419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED11A2C6-5F45-480F-90B3-5764D141A995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED11A2C6-5F45-480F-90B3-5764D141A995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED11A2C6-5F45-480F-90B3-5764D141A995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED11A2C6-5F45-480F-90B3-5764D141A995}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

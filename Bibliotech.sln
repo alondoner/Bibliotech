@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotech.Api", "Bibliotech.Api\Bibliotech.Api.csproj", "{5F256E51-5B35-4745-AF78-963E98544200}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bibliotech.Api", "Bibliotech.Api\Bibliotech.Api.csproj", "{5F256E51-5B35-4745-AF78-963E98544200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotech.Domain", "Bibliotech.Domain\Bibliotech.Domain.csproj", "{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5F256E51-5B35-4745-AF78-963E98544200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F256E51-5B35-4745-AF78-963E98544200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F256E51-5B35-4745-AF78-963E98544200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0BF2997-8DEE-4ADD-9CEB-3D209D44F2D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
